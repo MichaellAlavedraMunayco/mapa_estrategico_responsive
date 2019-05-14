@@ -1,0 +1,54 @@
+:root {
+  --background-color-perspectiva: orange;
+  --text-color-perspectiva: white;
+  --background-color-tema-default: rgb(78, 78, 78);
+  --text-color-tema: white;
+  --margin-perspectiva: 4px 0px;
+  --margin-tema: 0px 4px;
+  --padding-both: 16px 4px;
+  --border-radious-both: 20px;
+  --background-color-objetivo-default: rgb(221, 219, 219);
+}
+.hidden-th{
+    width: 50px;
+}
+table {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.perspectiva, .tema-estrategico{
+    text-align: center;
+    padding: var(--padding-both);
+}
+.perspectiva, .perspectiva::before{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+    white-space:nowrap;
+    display:block;
+    background-color: var(--background-color-perspectiva);
+    margin: var(--margin-perspectiva);
+    font-size: 18px;
+    color: var(--text-color-perspectiva);
+    width: 50px;
+    line-height: 40px;
+    border-top-right-radius: var(--border-radious-both);
+    border-bottom-right-radius: var(--border-radious-both);
+}
+.tema-estrategico {
+    margin: var(--margin-tema);
+    background-color: var(--background-color-tema-default);
+    color: var(--text-color-tema);
+    border-top-right-radius: var(--border-radious-both);
+    border-top-left-radius: var(--border-radious-both);
+}
+
+.objetivo{
+    background-color: var(--background-color-objetivo-default);
+    border-radius: 10px;
+    height: 50px;
+}
