@@ -10,15 +10,10 @@
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/styles.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.0.5/go.js"></script>
-  <script src="https://gojs.net/latest/extensions/TableLayout.js"></script>
-  <script src="js/javascript.js"></script> -->
-  <!-- <script src="js/make.map.js"></script> -->
 </head>
 
 <body>
   <nav class="navbar navbar-dark bg-dark">
-
     <div class="container">
       <a href="index.php" class="navbar-brand">Mapa estratégico Responsive</a>
     </div>

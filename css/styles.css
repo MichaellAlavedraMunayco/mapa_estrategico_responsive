@@ -3,25 +3,36 @@
   --text-color-perspectiva: white;
   --background-color-tema-default: rgb(78, 78, 78);
   --text-color-tema: white;
-  --margin-perspectiva: 4px 0px;
-  --margin-tema: 0px 4px;
-  --padding-both: 16px 4px;
+  --margin-perspectiva: 2px 0px;
+  --margin-tema: 0px 2px;
+  --padding-both: 8px 2px;
   --border-radious-both: 20px;
-  --background-color-objetivo-default: rgb(221, 219, 219);
+  --background-color-grilla-default: rgb(221, 219, 219);
+}
+.mapa-estrategico{
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    padding: 4px;
 }
 .hidden-th{
-    width: 50px;
+    width: 40px;
 }
 table {
-    margin-top: 40px;
     width: 100%;
     text-align: center;
+    font-size: 13px;
+}
+tr{
+    height: 1px;
+}
+td {
+    height: inherit;
 }
 .perspectiva, .tema-estrategico{
     text-align: center;
     padding: var(--padding-both);
 }
-.perspectiva, .perspectiva::before{
+.perspectiva{
     writing-mode:tb-rl;
     -webkit-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
@@ -32,12 +43,12 @@ table {
     display:block;
     background-color: var(--background-color-perspectiva);
     margin: var(--margin-perspectiva);
-    font-size: 18px;
     color: var(--text-color-perspectiva);
-    width: 50px;
+    width: 40px;
     line-height: 40px;
     border-top-right-radius: var(--border-radious-both);
-    border-bottom-right-radius: var(--border-radious-both);
+    border-bottom-right-radius: var(--border-radious-both); 
+    height: inherit;
 }
 .tema-estrategico {
     margin: var(--margin-tema);
@@ -47,8 +58,43 @@ table {
     border-top-left-radius: var(--border-radious-both);
 }
 
-.objetivo{
-    background-color: var(--background-color-objetivo-default);
-    border-radius: 10px;
-    height: 50px;
+.grilla{
+    background-color: var(--background-color-grilla-default);
+    border-radius: 5px;
+    margin: 4px;
+    padding: 4px;
+    height: 95%;
+}
+.descripcion-grilla{
+    font-weight: bold;
+    padding: 4px 0 8px 0;
+}
+.objetivo {
+    border-radius: 5px;
+    background-color: cadetblue;
+    margin: 4px;
+    padding: 8px;
+    height: 95%;
+}
+.contenedor-iconos{
+    display: flex;
+}
+.score-objetivo{
+    background-color: darkgreen;
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+    height: 25px;
+    font-weight: bold;
+    line-height: 17px;
+    width: 25px;
+    font-size: 10px;
+}
+.indicador-objetivo{
+    font-size: 17px;
+    text-align: right;
+    flex: 1; 
+}
+.texto-objetivo{
+    padding: 4px;
 }

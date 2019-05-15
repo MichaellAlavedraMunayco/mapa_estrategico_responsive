@@ -1,78 +1,113 @@
 <?php include('includes/header.php'); ?>
 
-
-<!-- <div style="width: 100%; display: flex; justify-content: space-between">
-  <div id="myDiagramDiv" style="flex-grow: 1; height: 680px; border: solid 1px black"></div>
-</div> -->
-
 <div class="container">
-  <table>
-    <tr>
-      <th class="hidden-th"></th>
-      <th>
-        <div class="tema-estrategico">Tema estratégico 1</div>
-      </th>
-      <th>
-        <div class="tema-estrategico">Tema estratégico 4</div>
-      </th>
-      <th>
-        <div class="tema-estrategico">Tema estratégico 2</div>
-      </th>
-      <th>
-        <div class="tema-estrategico">Tema estratégico 3</div>
-      </th>
-    </tr>
-    <tr>
-      <th>
-        <div class="perspectiva">Perspecita 1</div>
-      </th>
-      <td>
-        <div id="a" class="objetivo">Objetivo 1</div>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>
-        <div class="perspectiva">Perspecita 2</div>
-      </th>
-      <td></td>
-      <td colspan="2">
-        <div id="a" class="objetivo">Objetivo 2</div>
-      </td>
-      <!-- <td></td> -->
-      <td></td>
-    </tr>
-    <tr>
-      <th>
-        <div class="perspectiva">Perspecita 3</div>
-      </th>
-      <td rowspan="2"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>
-        <div class="perspectiva">Perspecita 4</div>
-      </th>
-      <!-- <td></td> -->
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
+  <div class="mapa-estrategico">
+    <table>
+      <tr>
+        <th class="hidden-th"></th>
+        <th>
+          <div class="tema-estrategico">Mejorar la calidad de los activos</div>
+        </th>
+        <th>
+          <div class="tema-estrategico">Lograr la excelencia operacional</div>
+        </th>
+        <th>
+          <div class="tema-estrategico">Lograr el crecimientos de ingresos a través de la intimidad con los clientes
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="perspectiva">Financiera y Resultados</div>
+        </th>
+        <td>
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <div class="perspectiva">Clientes</div>
+        </th>
+        <td>
+          <div class="grilla">
+            <table>
+              <tr>
+                <td>
+                  <div id="a" class="objetivo">
+                    <div class="contenedor-iconos">
+                      <div class="score-objetivo">90</div>
+                      <div class="indicador-objetivo"><i class="far fa-lightbulb"></i></div>
+                    </div>
+                    <div class="texto-objetivo">Mejorar la infraestructura</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <div class="perspectiva">Procesos</div>
+        </th>
+        <td>
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla"></div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <div class="perspectiva">Aprendizaje y Crecimiento</div>
+        </th>
+        <td colspan="2">
+          <div class="grilla"></div>
+        </td>
+        <td>
+          <div class="grilla">
+            <div class="descripcion-grilla">Tecnología Información</div>
+            <table>
+              <tr>
+                <td>
+                  <div class="objetivo">
+                    <div class="contenedor-iconos">
+                      <div class="score-objetivo">100</div>
+                      <div class="indicador-objetivo"><i class="far fa-lightbulb"></i></div>
+                    </div>
+                    <div class="texto-objetivo">Mejorar la infraestructura tecnológica de TI</div>
+                  </div>
+                </td>
+                <td>
+                  <div id="b" class="objetivo">
+                    <div class="contenedor-iconos">
+                      <div class="score-objetivo">100</div>
+                      <div class="indicador-objetivo"><i class="far fa-lightbulb"></i></div>
+                    </div>
+                    <div class="texto-objetivo">Mejorar la infraestructura tecnológica de TI</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-  <defs>
-    <marker id="arrowhead" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" />
-    </marker>
-  </defs>
-  <g fill="none" stroke="black" stroke-width="2" marker-end="url(#arrowhead)">
-    <path id="arrowLeft" />
-    <path id="arrowRight" />
-  </g>
-</svg>
 <?php include('includes/footer.php');
