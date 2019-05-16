@@ -1,13 +1,5 @@
 :root {
-  --background-color-perspectiva: orange;
-  --text-color-perspectiva: white;
-  --background-color-tema-default: rgb(78, 78, 78);
-  --text-color-tema: white;
-  --margin-perspectiva: 2px 0px;
-  --margin-tema: 0px 2px;
-  --padding-both: 8px 2px;
-  --border-radious-both: 20px;
-  --background-color-grilla-default: rgb(221, 219, 219);
+
 }
 .mapa-estrategico{
     margin-top: 10px;
@@ -15,7 +7,7 @@
     padding: 4px;
 }
 .hidden-th{
-    width: 40px;
+    min-width: 50px;
 }
 table {
     width: 100%;
@@ -25,12 +17,9 @@ table {
 tr{
     height: 1px;
 }
-td {
+td, th {
     height: inherit;
-}
-.perspectiva, .tema-estrategico{
-    text-align: center;
-    padding: var(--padding-both);
+    padding: 0;
 }
 .perspectiva{
     writing-mode:tb-rl;
@@ -39,27 +28,29 @@ td {
     -o-transform: rotate(180deg);
     -ms-transform:rotate(180deg);
     transform: rotate(180deg);
-    white-space:nowrap;
-    display:block;
-    background-color: var(--background-color-perspectiva);
-    margin: var(--margin-perspectiva);
-    color: var(--text-color-perspectiva);
-    width: 40px;
-    line-height: 40px;
-    border-top-right-radius: var(--border-radious-both);
-    border-bottom-right-radius: var(--border-radious-both); 
-    height: inherit;
+    white-space:pre-line;
+    background-color: orange;
+    color: white;
+    width: 95%;
+    height: 95%;
+    padding: 8px;
+    line-height: 95%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
 }
 .tema-estrategico {
-    margin: var(--margin-tema);
-    background-color: var(--background-color-tema-default);
-    color: var(--text-color-tema);
-    border-top-right-radius: var(--border-radious-both);
-    border-top-left-radius: var(--border-radious-both);
+    margin: 4px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    height: 95%;
+    line-height: 95%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .grilla{
-    background-color: var(--background-color-grilla-default);
+    background-color: lightgray;
     border-radius: 5px;
     margin: 4px;
     padding: 4px;
