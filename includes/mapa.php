@@ -1,4 +1,4 @@
-<div class="mapa-estrategico">
+<div id="mapa-estrategico" class="mapa-estrategico" style="display:none">
     <table>
         <tr>
             <th class="hidden-th"></th>
@@ -255,9 +255,4 @@
             </td>
         </tr>
     </table>
-</div>
-<div class="row d-flex justify-content-center">
-    <div class="col text-center">
-        <a class="btn btn-primary btn-sm mt-2 mx-3" href="index.php">Modificar datos</a>
-    </div>
 </div>
