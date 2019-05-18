@@ -1,7 +1,4 @@
 <?php include('includes/header.php'); ?>
-
-<!-- <form action="construir.mapa.estrategico.php" method="POST"> -->
-<!-- </form> -->
 <div class="container">
   <?php include('includes/input.php'); ?>
   <?php include('includes/mapa.php'); ?>
@@ -17,8 +14,6 @@
   </div>
 </div>
 <?php include('includes/external.src.php'); ?>
-<!-- <script src="js/index.js"></script>
-<script src="js/mapa.js"></script> -->
 <script>
   $(document).ready(function() {
     // Manejo de relaciones
