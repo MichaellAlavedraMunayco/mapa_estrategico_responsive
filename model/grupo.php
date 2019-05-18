@@ -24,4 +24,8 @@ class Grupo
     {
         return $this->color_objetivos_grupo;
     }
+    public function __toString()
+    {
+        return "[ " . $this->get_id_grupo . ", " . $this->get_nombre_grupo . ", " . $this->get_color_objetivos_grupo . " ]";
+    }
 }
