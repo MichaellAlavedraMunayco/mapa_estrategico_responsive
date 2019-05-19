@@ -12,31 +12,26 @@
                                 <div class="input-group mb-1">
                                     <div class="input-group-prepend">
                                         <select id="csPerspectivas">
-                                            <option value="47" data-color="#CD5C5C">indianred</option>
-                                            <option value="17" data-color="#008B8B">darkcyan</option>
-                                            <option value="68" data-color="#32CD32" selected="selected">limegreen
+                                            <option value="#32CD32" data-color="#32CD32" selected="selected">limegreen
                                             </option>
-                                            <option value="42" data-color="#FFD700">gold</option>
-                                            <option value="77" data-color="#48D1CC">mediumturquoise</option>
-                                            <option value="107" data-color="#87CEEB">skyblue</option>
-                                            <option value="13" data-color="#6495ED">cornflowerblue</option>
-                                            <option value="15" data-color="#DC143C">crimson</option>
-                                            <option value="24" data-color="#FF8C00">darkorange</option>
+                                            <option value="#CD5C5C" data-color="#CD5C5C">indianred</option>
+                                            <option value="#008B8B" data-color="#008B8B">darkcyan</option>
+                                            <option value="#FFD700" data-color="#FFD700">gold</option>
+                                            <option value="#48D1CC" data-color="#48D1CC">mediumturquoise</option>
+                                            <option value="#87CEEB" data-color="#87CEEB">skyblue</option>
+                                            <option value="#6495ED" data-color="#6495ED">cornflowerblue</option>
+                                            <option value="#DC143C" data-color="#DC143C">crimson</option>
+                                            <option value="#FF8C00" data-color="#FF8C00">darkorange</option>
                                         </select>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm"
+                                    <input id="inpNombrePerspectiva" type="text" class="form-control form-control-sm"
                                         placeholder="Nombre de la perspectiva">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-primary btn-sm" type="button">Agregar</button>
+                                        <button id="btnAgregarPerspectiva" class="btn btn-outline-primary btn-sm"
+                                            type="button">Agregar</button>
                                     </div>
                                 </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item p-2">Nombre de la perspectiva
-                                        <button type="button" class="btn btn-outline-danger btn-sm float-right m-0">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </li>
-                                </ul>
+                                <ul id="listaPerspectivas" class="list-group"></ul>
                             </div>
                         </div>
                     </div>
@@ -52,29 +47,25 @@
                             <div class="form-group">
                                 <div class="input-group mb-1">
                                     <select id="csTemas">
-                                        <option value="47" data-color="#CD5C5C">indianred</option>
-                                        <option value="17" data-color="#008B8B">darkcyan</option>
-                                        <option value="68" data-color="#32CD32" selected="selected">limegreen</option>
-                                        <option value="42" data-color="#FFD700">gold</option>
-                                        <option value="77" data-color="#48D1CC">mediumturquoise</option>
-                                        <option value="107" data-color="#87CEEB">skyblue</option>
-                                        <option value="13" data-color="#6495ED">cornflowerblue</option>
-                                        <option value="15" data-color="#DC143C">crimson</option>
-                                        <option value="24" data-color="#FF8C00">darkorange</option>
+                                        <option value="#32CD32" data-color="#32CD32" selected="selected">limegreen
+                                        </option>
+                                        <option value="#CD5C5C" data-color="#CD5C5C">indianred</option>
+                                        <option value="#008B8B" data-color="#008B8B">darkcyan</option>
+                                        <option value="#FFD700" data-color="#FFD700">gold</option>
+                                        <option value="#48D1CC" data-color="#48D1CC">mediumturquoise</option>
+                                        <option value="#87CEEB" data-color="#87CEEB">skyblue</option>
+                                        <option value="#6495ED" data-color="#6495ED">cornflowerblue</option>
+                                        <option value="#DC143C" data-color="#DC143C">crimson</option>
+                                        <option value="#FF8C00" data-color="#FF8C00">darkorange</option>
                                     </select>
-                                    <input type="text" class="form-control form-control-sm"
-                                        placeholder="Nombre del Tema Estratégico">
+                                    <input id="inpNombreTemaEstrategico" type="text"
+                                        class="form-control form-control-sm" placeholder="Nombre del Tema Estratégico">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-primary btn-sm" type="button">Agregar</button>
+                                        <button id="btnAgregarTemaEstrategico" class="btn btn-outline-primary btn-sm"
+                                            type="button">Agregar</button>
                                     </div>
                                 </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item p-2">Nombre del Tema Estratégico
-                                        <button type="button" class="btn btn-outline-danger btn-sm float-right m-0">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </li>
-                                </ul>
+                                <ul id="listaTemas" class="list-group"></ul>
                             </div>
                         </div>
                     </div>
@@ -90,55 +81,27 @@
                     <div class="form-group">
                         <div class="input-group mb-1">
                             <select id="csGrupos">
-                                <option value="47" data-color="#CD5C5C">indianred</option>
-                                <option value="17" data-color="#008B8B">darkcyan</option>
-                                <option value="68" data-color="#32CD32" selected="selected">limegreen</option>
-                                <option value="42" data-color="#FFD700">gold</option>
-                                <option value="77" data-color="#48D1CC">mediumturquoise</option>
-                                <option value="107" data-color="#87CEEB">skyblue</option>
-                                <option value="13" data-color="#6495ED">cornflowerblue</option>
-                                <option value="15" data-color="#DC143C">crimson</option>
-                                <option value="24" data-color="#FF8C00">darkorange</option>
+                                <option value="#32CD32" data-color="#32CD32" selected="selected">limegreen
+                                </option>
+                                <option value="#CD5C5C" data-color="#CD5C5C">indianred</option>
+                                <option value="#008B8B" data-color="#008B8B">darkcyan</option>
+                                <option value="#FFD700" data-color="#FFD700">gold</option>
+                                <option value="#48D1CC" data-color="#48D1CC">mediumturquoise</option>
+                                <option value="#87CEEB" data-color="#87CEEB">skyblue</option>
+                                <option value="#6495ED" data-color="#6495ED">cornflowerblue</option>
+                                <option value="#DC143C" data-color="#DC143C">crimson</option>
+                                <option value="#FF8C00" data-color="#FF8C00">darkorange</option>
                             </select>
-                            <input type="text" class="form-control form-control-sm" placeholder="Nombre del Grupo">
+                            <input id="inpNombreGrupo" type="text" class="form-control form-control-sm"
+                                placeholder="Nombre del Grupo">
                         </div>
-                        <div class="input-group input-group-sm">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text">Perspectiva</label>
-                            </div>
-                            <select class="custom-select">
-                                <option selected>Seleccionar...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <ul class="list-group mb-1">
-                            <li class="list-group-item p-2">Nombre de la perspectiva
-                                <button type="button" class="btn btn-outline-danger btn-sm float-right m-0">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="input-group input-group-sm">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text">Tema Estratégico</label>
-                            </div>
-                            <select class="custom-select">
-                                <option selected>Seleccionar...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <ul class="list-group mb-1">
-                            <li class="list-group-item p-2">Nombre del Tema Estratégico
-                                <button type="button" class="btn btn-outline-danger btn-sm float-right m-0">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </li>
-                        </ul>
-                        <button class="btn btn-outline-primary btn-sm float-right" type="button">Agregar</button>
+                        <label>Elegir Perspectivas</label>
+                        <ul id="selPerspectivas" class="list-group mb-1"></ul>
+                        <label>Elegir Temas Estratégicos</label>
+                        <ul id="selTemas" class="list-group mb-1"></ul>
+                        <button id="btnAgregarGrupo" class="btn btn-outline-primary btn-sm btn-block"
+                            type="button">Agregar</button>
+                        <ul id="listaGrupos" class="list-group my-1"></ul>
                     </div>
                 </div>
             </div>
@@ -157,11 +120,8 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text">Grupo</label>
                                 </div>
-                                <select class="custom-select">
+                                <select id="selGrupos" class="custom-select">
                                     <option selected>Seleccionar...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
                                 </select>
                             </div>
                             <div class="input-group mb-1">

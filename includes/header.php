@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top py-1">
     <div class="container">
       <a href="index.php" class="navbar-brand">Mapa Estratégico</a>
     </div>

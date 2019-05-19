@@ -89,3 +89,10 @@ td, th {
 .texto-objetivo{
     padding: 4px;
 }
+
+.color-box{
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: inline-block; 
+}
