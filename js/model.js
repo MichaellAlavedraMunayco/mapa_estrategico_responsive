@@ -77,14 +77,16 @@ class GrupoEstrategico {
 
     toString() {
         var strPers = '', strTem = '';
-        for (let i = 0; i < perspectivas.length; i++) {
-            const perspectiva = perspectivas[i];
+        for (let i = 0; i < this.perspectivas.length; i++) {
+            const perspectiva = this.perspectivas[i];
             strPers += `{id: ${perspectiva.id}, nombre: ${perspectiva.nombre}},`;
         }
-        for (let i = 0; i < temas.length; i++) {
-            const tema = temas[i];
+        for (let i = 0; i < this.temas.length; i++) {
+            const tema = this.temas[i];
             strTem += `{id: ${tema.id}, nombre: ${tema.nombre}},`;
         }
-        return `Grupo: [id: ${this.id}, nombre: ${this.nombre}, color: ${this.color}, \nPerspectivas = [${strPers}], \nTemas = [${strTem}]]`;
+        return `Grupo: [id: ${this.id}, nombre: ${this.nombre}, color: ${this.color}, 
+            Perspectivas = [${strPers}],
+            Temas = [${strTem}]]`;
     }
 }
